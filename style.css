@@ -1,0 +1,142 @@
+footer  {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+@keyframes q {
+    from {
+        transform: translateX(0px);
+    } to {
+              transform: translateX(-200px);
+
+          }
+}
+@keyframes off {
+    from {
+        transform: skewX(0deg);
+    }
+    to {
+        transform: skewX(180deg);
+    }
+}
+.container h1:hover {
+    animation: q 5s infinite alternate;
+}
+footer h3 {
+    border-top: 0.05em solid black
+}
+footer img {
+    width:6em;
+    height:10em;
+}
+@media (min-width: 1020px) {
+    .card {
+        width: 33%;
+    }
+}
+@media(max-width: 1020px) and (min-width: 700px) {
+    .card {
+        margin: 1em;
+    }
+    .container img {
+        width: 4em;
+        height: 3em;
+    }
+}
+.container a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2em;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 1em;
+}
+.container p {
+    max-width: 65%;
+    overflow-wrap: break-word;
+    color:#15291b;
+    font-weight: bolder;
+}
+.container div {
+    border: 0.16em black solid;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container img {
+    border-radius: 4em;
+    width: 20em;
+    height: 15em;
+}
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+@keyframes lol {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+html {
+        background: linear-gradient(135deg, white, yellowgreen);
+}
+header {
+    display: flex;
+    justify-content: center;
+
+}
+header > img {
+    width: 30%;
+    height: 10%;
+}
+ul:hover {
+    background-color: #24733e;
+}
+ul {
+    border-radius: 2em;
+    background-color: black;
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#h > h1 {
+    color: cornsilk;
+    padding-bottom: 9em;
+    position: relative;
+    top: 0.2em;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 2em;
+}
+.container h1 {
+    color: #103b1d;
+}
+li:hover {
+    border: 0.1em black solid;
+    background-color: #24733e;
+    border-radius: 0.5em;
+    animation: lol 2s;
+}
+li > a {
+    text-decoration: none;
+    color:     cornsilk
+}
+main > div:nth-child(1) {
+    width: 100%;
+    background: url("qowppo.jpg") no-repeat center top / cover;
+    border-radius: 1.4em;
+}
